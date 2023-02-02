@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'jobvoyage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jobvoyage',
+        'NAME': 'tschmiedl/jobvoyagedb',
         'USER': 'tschmiedl',
-        'PASSWORD': 'v2_3yfb3_Y9DFYKPtebD3ZTSnQN3xnFE',
+        'PASSWORD': 'v2_3yfji_HFgmQZdv2a4X36rerhdLEgR',
         'HOST': 'db.bit.io',
         'PORT': '5432',
     }
