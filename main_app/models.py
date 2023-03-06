@@ -2,6 +2,7 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
 from datetime import date
+from datetime import datetime
 # Create your models here.
 
 class Application(models.Model):
@@ -25,6 +26,6 @@ STATUS_CHOICES = [
 class Status(models.Model):
     app_status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=STATUS_CHOICES[0])
     application = models.ForeignKey(Application, on_delete=models.CASCADE)
-
+    
     def __str__(self) -> str:
         return f'{self.app_status}'
