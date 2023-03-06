@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+{% include 'partials/head.html' with title='About' %}
+
+<body>
+    {% include 'partials/nav.html' %}
+
+    <h1>Log In</h1>
+
+    <form method="post" action="/accounts/login/">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn" value="login">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+
+
+
+    {% include 'partials/footer.html' %}
+</body>
+
+</html>

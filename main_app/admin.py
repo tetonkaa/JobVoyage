@@ -6,3 +6,7 @@ from django.contrib import admin
 from .models import Application
 
 admin.site.register(Application)
+
+from .models import Status
+
+admin.site.register(Status)

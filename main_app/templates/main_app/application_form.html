@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'partials/head.html' with title='New App' %}
+
+<body>
+    {% include 'partials/nav.html' %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <table>
+            {{ form.as_table }}
+        </table>
+
+        <input type="submit" value="Submit!">
+    </form>
+
+    {% include 'partials/footer.html' %}
+</body>
+
+</html>
